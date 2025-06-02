@@ -1,0 +1,33 @@
+server:
+  port: 8080
+  shutdown: graceful
+  forward-headers-strategy: framework
+
+eureka:
+  instance:
+    metadata-map:
+      management.port: ${management.server.port}
+
+management:
+  server:
+    port: 8081
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  info:
+    os:
+      enabled: true
+    java:
+      enabled: true
+    process:
+      enabled: true
+
+logging:
+  file:
+    path: ./logs
+  charset:
+    file: UTF-8
