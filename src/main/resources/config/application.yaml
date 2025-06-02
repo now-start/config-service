@@ -1,19 +1,13 @@
 server:
-  port: 8888
   shutdown: graceful
   forward-headers-strategy: framework
 
 spring:
-  application:
-    name: config
   cloud:
     config:
-      server:
-        git:
-          uri: https://github.com/now-start/config-service
-          search-paths: src/main/resources/config/*
-        encrypt:
-          enabled: false
+      discovery:
+        enabled: true
+        service-id: config
 
 eureka:
   instance:
@@ -42,9 +36,7 @@ management:
       enabled: true
 
 logging:
-  file:
-    path: ./logs
   charset:
     file: UTF-8
-
-
+  file:
+    path: ./logs

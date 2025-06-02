@@ -1,33 +1,16 @@
 server:
-  port: 8080
-  shutdown: graceful
-  forward-headers-strategy: framework
+  port: 9090
+
+spring:
+  application:
+    name: admin
+  security:
+    user:
+      name: ${USER_NAME:admin}
+      password: ${USER_PASSWORD:asdf}
 
 eureka:
   instance:
     metadata-map:
-      management.port: ${management.server.port}
-
-management:
-  server:
-    port: 8081
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
-  info:
-    os:
-      enabled: true
-    java:
-      enabled: true
-    process:
-      enabled: true
-
-logging:
-  file:
-    path: ./logs
-  charset:
-    file: UTF-8
+      user.name: ${spring.security.user.name}
+      user.password: ${spring.security.user.password}
