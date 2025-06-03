@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: lotto
   mail:
     host: smtp.gmail.com
     port: 587

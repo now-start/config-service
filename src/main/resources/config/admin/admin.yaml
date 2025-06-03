@@ -2,8 +2,6 @@ server:
   port: 9090
 
 spring:
-  application:
-    name: admin
   security:
     user:
       name: '{cipher}003a9ac1cc9bb34550df012137adcd465ae72d0ecc33aeaef21677cf4d4c576b'
