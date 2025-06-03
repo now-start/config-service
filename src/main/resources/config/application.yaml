@@ -2,24 +2,17 @@ server:
   shutdown: graceful
   forward-headers-strategy: framework
 
-spring:
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: config
-
 eureka:
   instance:
     metadata-map:
       management.port: ${management.server.port}
   client:
     service-url:
-      defaultZone: ${SERVICE_URL:http://localhost:8761/eureka}
+      defaultZone: ${SERVICE_URL:}
 
 management:
   server:
-    port: 8081
+    port: 0
   endpoints:
     web:
       exposure:

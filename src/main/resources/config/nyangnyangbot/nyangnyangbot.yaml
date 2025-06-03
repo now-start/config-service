@@ -9,23 +9,19 @@ spring:
       hibernate:
         format_sql: true
   datasource:
-    url: ${DB_URL:ENC(aaC2l5twFy36wicAJjFw6dNdgEJUGs6HNHcK9z1YRGV8rRnyjchggGCHwOYJAAWrk/F6SvrUzWvx/DCcp8gJKgooROKrI2fCXWEWNu5x1GM=)}
-    username: ${DB_USERNAME:ENC(8rEbRK5wP4t3G/5uvMuxpYFpjNvQdCszFCB5O47VpKpgMkkZNUMMb98acnZIlPye)}
-    password: ${DB_PASSWORD:ENC(KBJVPID3U2CxSFN1apiXheJ92TtZXLNWGXW2Pvii3BiR1WcT1+TMVouRPNABMIwk)}
-
-jasypt:
-  encryptor:
-    password: ${JASYPT_KEY}
+    url: '{cipher}690e5a6d02b753938fadfb23f69c680d2b50bc5f163829988e1ac08d82f53d0bfe80eb088902943d2490d1f01611aac21d34e06622fd5224273633d1a22a238d'
+    username: '{cipher}931c61e8636390a4fa6cedb64128e392d9d243233749c2995097a60350a341a5'
+    password: '{cipher}61475ca024061ddf0581c896c07508ca678a6eddac1067ca45f31ced1d9f50df'
 
 google:
   spreadsheet:
-    id: ENC(4hsMJwPVMud5uMCYlsY6AEofkUityI6pU68yrSgEnJHVsdG4bdFOcD6eWe08xkYIruy4deRX1xlIM+A5+lp47fVXaZqTZ8s5EwKzg63zpjU=)
-    key: ./key/google_spread_sheet_key.json
+    id: '{cipher}556c046324003d7c1e7505c451d7279347b316c7c221c120817edf87af83e0d467b6f4042fb4be0cf37c9640940dfa3e1190c71cb82a5feecd1e21eb4115151b'
+    key: '{cipher}a4dddd07ca9249da2cc470320f003df2f09ded25023444a8262c66b90f74342fe03f280928e26212f290b076d9c8d058915770a22ba63d37f689b8d401e5ed61'
 
 chzzk:
-  id: ${CHZZK_ID:ENC(aOASAVotUHdAABf0SDvcVjxvR7TkTSK/mU0d4yUVArvPx9XmHkQgudf7qqsFc8v4)}
-  password: ${CHZZK_PASSWORD:ENC(CziDTwuP8udmw3Rj5elsU7Bdf5x7umGM5iH8u0nUJu92wBCFivnuY/FPYdzymA6j)}
-  channelId: ${CHZZK_CHANNEL_ID:ENC(quG85YdX+oDu/vCBG0Aubp2vv0oNBCj2DGztfUIq58T/o9a4Bdd/YrCnDyE/GkhKZQw6ZaNqam0od0GQ+o2XcnetxVoX7PVqr+ogJ87sr4g=)}
-  clientId: ${CHZZK_CLIENT_ID:ENC(aWyut53qLnkrwiZum0V/8KyJ4xlpAKtq8YaR6h0ERlLbK2YDF0O9ZihGdUGOABUq6fxzUH43uHbIEDyfL/tixPqXOdu+TUX5KlTKoIzUS9s=)}
-  clientSecret: ${CHZZK_CLIENT_SECRET:ENC(wG+b5r5ms4bJVAyV0Gn2VxayRdxejJ2KdhttHEhYRrtBcBs2r8qwtdMYBZf8mHsmojCEnOBCStWdwVeov1nOh2Q5MObo8fg0H6hD43kmQqo=)}
-  redirectUri: ${CHZZK_REDIRECT_URI:http://localhost:8080}
+  id: '{cipher}f93ab23c908884fa48f0dd3da17ee937432794ea7e8d7f851f64bd962d5a967f'
+  password: '{cipher}0d3cf888b40f6075675acf3e79862e45164acdbb9feaf14d409a64dfce9e9639'
+  channelId: '{cipher}4e63bfbda0f473e4b2aa856d30d88c5dd340b4468010e2480b8c07576140ea12075f8cffdc28be4c8b93072c326d4bcbbe97f55939b3b2fc927ee1d07a632606'
+  clientId: '{cipher}a71d4ba5c5f65a703ea71eca02c25c76181745c1c22ae11d7111d10b417603d02aa8dcc298bef55aa3a6c0d3761b0ed41b9c42392afadf4165c47f335c877877'
+  clientSecret: '{cipher}b1d5ae9f93def440422b5c140fa530be556ac31ef95832a8cf0bc4d97d653c9ac91de8d5792c1b1c3e2c30e08f5188dfbdcd645779d42f1fe64648d0bb5e3fda'
+  redirectUri: '{cipher}11bddff8e6863aac6f73277a6108b08bddaedfbc11a7edc2615219bf5dd1f14a0c7169feff6d45c274f7a1614fed10777eca68a9fa733606c1664565adc82233377f6cbbb3ea5df0f75e607c544da4f5'
