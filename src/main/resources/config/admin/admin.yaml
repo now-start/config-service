@@ -6,3 +6,9 @@ spring:
     user:
       name: '{cipher}003a9ac1cc9bb34550df012137adcd465ae72d0ecc33aeaef21677cf4d4c576b'
       password: '{cipher}fd2dd3276551d47c39942e005f83b3633bd7aed5159444462127d8e1c7ed5510'
+
+eureka:
+  instance:
+    metadata-map:
+      user.name: ${spring.security.user.name}
+      user.password: ${spring.security.user.password}
