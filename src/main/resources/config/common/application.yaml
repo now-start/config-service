@@ -3,24 +3,23 @@ server:
   forward-headers-strategy: framework
 
 eureka:
-  instance:
-    metadata-map:
-      management.port: ${management.server.port}
   client:
     service-url:
       defaultZone: ${SERVICE_URL:}
 
 management:
-  server:
-    port: 8081
   endpoints:
     web:
       exposure:
         include: "*"
+    access:
+      default: unrestricted
   endpoint:
     health:
       show-details: always
   info:
+    git:
+      mode: full
     os:
       enabled: true
     java:
