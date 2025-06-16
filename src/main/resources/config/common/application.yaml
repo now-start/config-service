@@ -14,7 +14,6 @@ management:
         include: "*"
     access:
       default: unrestricted
-    enabled-by-default: true # 하위 호환성
   endpoint:
     health:
       show-details: always

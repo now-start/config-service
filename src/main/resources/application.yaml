@@ -31,8 +31,6 @@ management:
     health:
       show-details: always
   info:
-    git:
-      mode: full
     os:
       enabled: true
     java:
