@@ -31,6 +31,8 @@ management:
   endpoint:
     health:
       show-details: always
+    env:
+      show-values: always
   info:
     os:
       enabled: true
