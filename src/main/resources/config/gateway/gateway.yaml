@@ -14,3 +14,12 @@ spring:
             locator:
               enabled: true
               lower-case-service-id: true
+
+eureka:
+  instance:
+    metadata-map:
+      management.port: ${management.server.port}
+
+management:
+  server:
+    port: 8001
