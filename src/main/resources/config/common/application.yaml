@@ -2,6 +2,13 @@ server:
   shutdown: graceful
   forward-headers-strategy: framework
 
+spring:
+  jmx:
+    enabled: true
+
+encrypt:
+  key: '{cipher}27c52131842a4d1aa2fe34746cb0afed88c973d4e7dab7c55dacea98f1619c93'
+
 eureka:
   client:
     service-url:
