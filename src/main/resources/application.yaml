@@ -6,6 +6,8 @@ server:
 spring:
   application:
     name: config
+  jmx:
+    enabled: true
   cloud:
     config:
       server:
