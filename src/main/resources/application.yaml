@@ -21,7 +21,7 @@ encrypt:
 eureka:
   client:
     service-url:
-      defaultZone: ${SERVICE_URL:}
+      defaultZone: http://eureka:8761/eureka
 
 management:
   endpoints:
