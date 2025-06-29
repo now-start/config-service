@@ -12,7 +12,7 @@ encrypt:
 eureka:
   client:
     service-url:
-      defaultZone: ${SERVICE_URL:}
+      defaultZone: '{cipher}e61001ccb3c7c64d3b6e1875fcbddcc5e36861960f15eaaa5d1eee95f2834b401329d3cf71c7375139395d9e08177bf1'
 
 management:
   endpoints:
