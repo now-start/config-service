@@ -8,12 +8,10 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
-      server:
-        webflux:
-          discovery:
-            locator:
-              enabled: true
-              lower-case-service-id: true
+      default-filters:
+        - name: CircuitBreaker
+          args:
+            name: default
 
 eureka:
   instance:
