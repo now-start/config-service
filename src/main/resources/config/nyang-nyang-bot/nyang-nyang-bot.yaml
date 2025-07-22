@@ -7,9 +7,9 @@ spring:
       hibernate:
         format_sql: true
   datasource:
-    url: '{cipher}690e5a6d02b753938fadfb23f69c680d2b50bc5f163829988e1ac08d82f53d0bfe80eb088902943d2490d1f01611aac21d34e06622fd5224273633d1a22a238d'
-    username: '{cipher}931c61e8636390a4fa6cedb64128e392d9d243233749c2995097a60350a341a5'
-    password: '{cipher}61475ca024061ddf0581c896c07508ca678a6eddac1067ca45f31ced1d9f50df'
+    url: '{cipher}a5a8114474e5fcd6a9f0ba8d6ca8a274026ffccca977e27808c3b7ac88ff96149a87008bfae0909d1bea323a08adb5292db5952b3077f0e7e91aed9389ce9bea47aae7f35d4abd5506aeffc6312db4d0'
+    username: '{cipher}e76dd74451fcf3902439fc1e0c96ebbb3fc7efbcb5c37972f5db8a81d6ceb1be'
+    password: '{cipher}076e73cea7ab188f178eba197daa6c558ed9f174772aea76e5234192ab9f986002ad50eebd9dec8ef31a49604c76edd8'
 
 google:
   spreadsheet:
