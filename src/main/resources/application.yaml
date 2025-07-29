@@ -48,3 +48,6 @@ logging:
     path: ./logs
   charset:
     file: UTF-8
+  level:
+    com.netflix : warn
+    org.springframework.cloud.config : warn

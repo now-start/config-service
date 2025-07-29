@@ -39,3 +39,5 @@ logging:
     file: UTF-8
   file:
     path: ./logs
+  level:
+    com.netflix : warn
