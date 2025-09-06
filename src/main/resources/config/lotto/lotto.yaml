@@ -17,6 +17,8 @@ lotto:
   password: ${LOTTO_PASSWORD:}
   email: ${LOTTO_EMAIL:}
   count: ${LOTTO_COUNT:5}
+  max-retries: ${LOTTO_MAX_RETRIES:3}
+  retry-delay-ms: ${LOTTO_RETRY_DELAY_MS:5000}
   cron:
     check: ${LOTTO_CRON_CHECK:0 0 22 * * 6}
     buy: ${LOTTO_CRON_BUY:0 0 9 * * 0}
