@@ -39,5 +39,8 @@ logging:
     file: UTF-8
   file:
     path: ./logs
+  logback:
+    rollingpolicy:
+      max-history: 7
   level:
     com.netflix : warn
