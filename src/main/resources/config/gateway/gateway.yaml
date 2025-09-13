@@ -44,5 +44,4 @@ security:
   guest: []
   publicPaths:
     - "/nyang-nyang-bot/authorization/**"
-    - "/nyang-nyang-bot/favorite/list"
     - "/actuator/**"
