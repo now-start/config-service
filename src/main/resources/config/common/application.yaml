@@ -5,6 +5,10 @@ server:
 spring:
   jmx:
     enabled: true
+  rabbitmq:
+    addresses: '{cipher}bfddf0a957d7164bf750a4591fbca5a13de63bbc5d4da9c47424bd74b350e366b4e281cdaa22869f0735835d89385a9d'
+    username: '{cipher}ca11e8e3e01d70dad563f19f7a8b36a7194c98cb5ca3f314f53d9ed398ae47f2'
+    password: '{cipher}3cde6ef87980898c0d66510ead6f91ed86ba0da92612f4bf684e0dbab1d0003d'
 
 encrypt:
   key: '{cipher}27c52131842a4d1aa2fe34746cb0afed88c973d4e7dab7c55dacea98f1619c93'
@@ -47,3 +51,4 @@ logging:
       max-history: 7
   level:
     com.netflix : warn
+    org.springframework.cloud.config : warn

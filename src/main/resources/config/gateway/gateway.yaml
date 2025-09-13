@@ -32,3 +32,16 @@ eureka:
 management:
   server:
     port: 8001
+
+security:
+  administrators:
+    - "/admin/applications/*/actuator/**"
+    - "/admin/instances/**"
+    - "/config/**"
+    - "/eureka/**"
+    - "/*/actuator/**"
+  personal: []
+  guest: []
+  publicPaths:
+    - "/nyang-nyang-bot/authorization/**"
+    - "/actuator/**"

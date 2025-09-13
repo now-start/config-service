@@ -14,14 +14,24 @@ spring:
         git:
           uri: https://github.com/now-start/config-service
           search-paths: src/main/resources/config/*
+  rabbitmq:
+    addresses: ENC(b3xz0Oy2ZOCTbtdtWcm/7ElbV4SHsTUnCYd7dDP3dr+Rop/QNGCZcqdMGMdQN6JDZpNrQUiA7/iA+/szN2UEhw==)
+    username: ENC(IScThTamcb6zd5JrAQfQsE0+yPK2Y5dzv7H3w4pxi5eUN6BrWASgaiQj7OX/bltW)
+    password: ENC(qcm+7oflMfAezkkjwHimWaqS8sIQJMHhm6XMsbhm06SWt0szQuVf2CYVB2o97+nI)
 
 encrypt:
   key: ${ENCRYPT_KEY}
 
+jasypt:
+  encryptor:
+    password: ${ENCRYPT_KEY}
+    algorithm: PBEWithHmacSHA512AndAES_256
+    iv-generator-classname: org.jasypt.iv.RandomIvGenerator
+
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka:8761/eureka
+      defaultZone: ENC(XoLESjtKlREcp7AiAb/QkRe9S0A5rZtcp3eUQhrWNoumZnqlx/Pks12XX7UUUQSYO9QyWlyJEu83ncnm1QxG+A==)
 
 management:
   endpoints:
@@ -47,10 +57,13 @@ management:
       enabled: true
 
 logging:
-  file:
-    path: ./logs
   charset:
     file: UTF-8
+  file:
+    path: ./logs
+  logback:
+    rollingpolicy:
+      max-history: 7
   level:
     com.netflix : warn
     org.springframework.cloud.config : warn
