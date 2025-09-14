@@ -1,0 +1,44 @@
+name: Config Refresh
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/main/resources/config/**/*.yaml'
+      - 'src/main/resources/config/**/*.yml'
+      - 'src/main/resources/config/**/*.properties'
+
+jobs:
+  refresh-config:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Bus Refresh
+        run: |
+          CONFIG_SERVER_URL="${{ secrets.CONFIG_SERVER_URL || 'http://localhost:8888' }}"
+
+          echo "Triggering config refresh for: $CONFIG_SERVER_URL"
+
+          # Retry logic for better reliability
+          for i in {1..3}; do
+            echo "Attempt $i/3:"
+            if curl -X POST "$CONFIG_SERVER_URL/actuator/busrefresh" \
+                -H "Content-Type: application/json" \
+                -H "Accept: application/json" \
+                -w "HTTP Status: %{http_code}\n" \
+                --connect-timeout 10 \
+                --max-time 30 \
+                --silent \
+                --show-error; then
+              echo "✅ Bus refresh successful on attempt $i"
+              exit 0
+            else
+              echo "❌ Attempt $i failed"
+              if [ $i -lt 3 ]; then
+                echo "Waiting 5 seconds before retry..."
+                sleep 5
+              fi
+            fi
+          done
+
+          echo "⚠️ All attempts failed. Config server might not be running or accessible."
+          exit 1

@@ -45,3 +45,4 @@ security:
   publicPaths:
     - "/nyang-nyang-bot/authorization/**"
     - "/actuator/**"
+    - "/config/actuator/busrefresh"
