@@ -10,6 +10,7 @@ spring:
           auth: true
           starttls:
             enable: true
+            required: true
 
 lotto:
   init: ${LOTTO_INIT:false}
