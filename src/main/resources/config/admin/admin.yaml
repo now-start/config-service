@@ -1,2 +1,11 @@
 server:
   port: 9090
+
+spring:
+  boot:
+    admin:
+      ui:
+        external-views:
+          - label: "Swagger"
+            url: "https://spring.nowstart.org/admin/swagger-ui/index.html"
+            iframe: true
