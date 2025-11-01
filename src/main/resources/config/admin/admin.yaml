@@ -8,5 +8,5 @@ spring:
         external-views:
           - label: "API 문서"
             url: "https://spring.nowstart.org/admin/swagger-ui/index.html"
-            order: 99
+            order: 1000
             iframe: true
