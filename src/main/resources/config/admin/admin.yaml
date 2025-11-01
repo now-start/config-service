@@ -6,6 +6,7 @@ spring:
     admin:
       ui:
         external-views:
-          - label: "Swagger"
+          - label: "API 문서"
             url: "https://spring.nowstart.org/admin/swagger-ui/index.html"
+            order: 99
             iframe: true
