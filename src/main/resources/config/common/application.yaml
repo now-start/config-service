@@ -9,17 +9,11 @@ spring:
     addresses: '{cipher}bfddf0a957d7164bf750a4591fbca5a13de63bbc5d4da9c47424bd74b350e366b4e281cdaa22869f0735835d89385a9d'
     username: '{cipher}ca11e8e3e01d70dad563f19f7a8b36a7194c98cb5ca3f314f53d9ed398ae47f2'
     password: '{cipher}3cde6ef87980898c0d66510ead6f91ed86ba0da92612f4bf684e0dbab1d0003d'
-  cloud:
-    stream:
-      rabbit:
-        bindings:
-          default:
-            consumer:
-              quorum:
-                enabled: true
-            producer:
-              quorum:
-                enabled: true
+  data:
+    redis:
+      password: '{cipher}df5159f5105d3634e3a57e475e350028e8a263d39ae48313f7da4d90611a6008'
+      cluster:
+        nodes: '{cipher}f54e0afe3cc0511a54dab5ffff55b87a03acda49c9195f08f545eb330fb2a733d1ba0e0e7a07ff987feb7de586959161a80a88a5ec31bcbe5545d9fc951e828ab194f283fe855e3f031d03b69483d559ae80d9e34e9850088f69b3509bd75c17b90a1f077468d72990c9a6bc4a5db6cb7fe914f947b737a37a4e36b091d2feb5'
 
 encrypt:
   key: '{cipher}27c52131842a4d1aa2fe34746cb0afed88c973d4e7dab7c55dacea98f1619c93'
