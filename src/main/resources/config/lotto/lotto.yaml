@@ -3,7 +3,7 @@ spring:
     host: mail.nowstart.org
     port: 587
     username: '{cipher}b4fe252e9b11fb3e43d395ad2512b8defba4e75e349a4856713199bf2db6656b'
-    password: '{cipher}1d2cf26c363293a8d65216117a5f8310cfb61f816d67503baef3145e3db2a27f'
+    password: '{cipher}c16bbd48acb689718be15447d98feeb93c4f1eb84d3c710729834837b4a8a4d4'
     properties:
       mail:
         smtp:
