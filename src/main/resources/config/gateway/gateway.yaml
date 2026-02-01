@@ -6,6 +6,9 @@ spring:
     gateway:
       server:
         webflux:
+          forwarded:
+            by:
+              enabled: true
           discovery:
             locator:
               enabled: true
