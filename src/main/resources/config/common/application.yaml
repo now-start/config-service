@@ -1,6 +1,6 @@
 server:
   shutdown: graceful
-  forward-headers-strategy: framework
+  forward-headers-strategy: native
 
 spring:
   jmx:
