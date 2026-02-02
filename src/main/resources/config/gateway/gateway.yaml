@@ -6,9 +6,7 @@ spring:
     gateway:
       server:
         webflux:
-          forwarded:
-            by:
-              enabled: true
+          trusted-proxies: ".*"
           discovery:
             locator:
               enabled: true
