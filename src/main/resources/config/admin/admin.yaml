@@ -15,7 +15,10 @@ spring:
             children:
               - label: "Grafana"
                 url: "https://grafana.nowstart.org"
+                iframe: true
               - label: "RabbitMQ"
                 url: "https://rabbitmq.nowstart.org"
+                iframe: true
               - label: "phpMyAdmin"
                 url: "https://dsm.nowstart.org/phpmyadmin/"
+                iframe: true
