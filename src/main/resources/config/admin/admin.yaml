@@ -7,6 +7,15 @@ spring:
       ui:
         external-views:
           - label: "API 문서"
+            order: 100
             url: "https://spring.nowstart.org/admin/swagger-ui/index.html"
-            order: 1000
             iframe: true
+          - label: "모니터링"
+            order: 101
+            children:
+              - label: "Grafana"
+                url: "https://grafana.nowstart.org"
+              - label: "RabbitMQ"
+                url: "https://rabbitmq.nowstart.org"
+              - label: "phpMyAdmin"
+                url: "https://dsm.nowstart.org/phpmyadmin/"
