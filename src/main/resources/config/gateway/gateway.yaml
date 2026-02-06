@@ -42,8 +42,10 @@ security:
     - "/admin/instances/**"
     - "/config/**"
     - "/eureka/**"
+    - "/*/actuator/**"
   personal: [ ]
   guest: [ ]
   publicPaths:
     - "/nyang-nyang-bot/**"               # 자체 인증
+    - "/actuator/**"                      # 게이트웨이 엑추에이터
     - "/config/actuator/busrefresh"       # github action
