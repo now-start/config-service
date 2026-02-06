@@ -40,12 +40,12 @@ security:
   administrators:
     - "/admin/applications/*/actuator/**"
     - "/admin/instances/**"
-    - "/*/actuator/**"
     - "/config/**"
     - "/eureka/**"
-    - "/nyang-nyang-bot/actuator/*"
   personal: [ ]
   guest: [ ]
   publicPaths:
-    - "/nyang-nyang-bot/**"               # 자체 인증
     - "/config/actuator/busrefresh"       # github action
+    - "/*/actuator/**"                    # 엑추에이터
+    - "/actuator/**"                      # 엑추에이터
+    - "/nyang-nyang-bot/**"               # 자체 인증
