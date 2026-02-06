@@ -43,6 +43,7 @@ security:
     - "/config/**"
     - "/eureka/**"
     - "/*/actuator/**"
+    - "/nyang-nyang-bot/actuator/**"
   personal: [ ]
   guest: [ ]
   publicPaths:
