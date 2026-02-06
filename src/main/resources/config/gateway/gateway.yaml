@@ -43,9 +43,9 @@ security:
     - "/config/**"
     - "/eureka/**"
     - "/*/actuator/**"
-  personal: []
-  guest: []
+  personal: [ ]
+  guest: [ ]
   publicPaths:
-    - "/nyang-nyang-bot/authorization/**"
-    - "/actuator/**"
-    - "/config/actuator/busrefresh"
+    - "/nyang-nyang-bot/**"               # 자체 인증
+    - "/actuator/**"                      # 게이트웨이 엑추에이터
+    - "/config/actuator/busrefresh"       # github action
