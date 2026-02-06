@@ -27,14 +27,6 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: '{cipher}84c9d2aa8f0c3c1f091bd5449d942d09b0f5b50602e90422990f73308b5398d07bd32c1e942e492bbfe47b5df115fb34042497d00dc8e0073b8618cc7850bd8e'
-eureka:
-  instance:
-    metadata-map:
-      management.port: ${management.server.port}
-
-management:
-  server:
-    port: 8001
 
 security:
   administrators:
