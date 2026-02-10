@@ -30,7 +30,6 @@ spring:
 
 security:
   users:
-    - "/*/v3/api-docs"
     - "/admin/applications"
     - "/admin/wallboard"
     - "/admin/journal"
@@ -38,6 +37,8 @@ security:
     - "/admin/assets/**"
     - "/admin/*.*"
     - "/admin/swagger-ui/**"
+    - "/*/v3/api-docs"
+    - "/admin/v3/api-docs/swagger-config"
   publicPaths:
     - "/config/actuator/busrefresh"       # github action
     - "/*/actuator/**"                    # 엑추에이터
