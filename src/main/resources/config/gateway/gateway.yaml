@@ -35,6 +35,8 @@ security:
     - "/admin/wallboard"
     - "/admin/journal"
     - "/admin/external"
+    - "/admin/assets/**"
+    - "/admin/*.js"
   publicPaths:
     - "/config/actuator/busrefresh"       # github action
     - "/*/actuator/**"                    # 엑추에이터
