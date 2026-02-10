@@ -37,7 +37,7 @@ security:
     - "/admin/external"
     - "/admin/assets/**"
     - "/admin/*.*"
-    - "/admin/swagger-ui/index.html"
+    - "/admin/swagger-ui/**"
   publicPaths:
     - "/config/actuator/busrefresh"       # github action
     - "/*/actuator/**"                    # 엑추에이터
