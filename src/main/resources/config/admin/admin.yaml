@@ -16,6 +16,9 @@ spring:
               - label: "Grafana"
                 url: "https://grafana.nowstart.org"
                 iframe: true
+              - label: "Redis"
+                url: "https://redis.nowstart.org"
+                iframe: true
               - label: "RabbitMQ"
                 url: "https://rabbitmq.nowstart.org"
                 iframe: true
