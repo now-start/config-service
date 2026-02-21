@@ -18,7 +18,7 @@ evergreen:
     secret-key: '{cipher}0ad9c8290af95dacadb3c21190035528d35a776b05aa20706f8181ffc61f5a27ab24de9be8eb52059bca81c99e3c080ff7c09a2dc98e61d024a455689be1c40a'
     fee-rate: 0.0005
     interval: 30s
-    execution-mode: PAPER
+    execution-mode: LIVE
     markets: KRW-BTC
     candle-count: 400
     closed-candle-only: true
