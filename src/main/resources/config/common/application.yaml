@@ -62,6 +62,3 @@ logging:
   logback:
     rollingpolicy:
       max-history: 7
-  level:
-    com.netflix : warn
-    org.springframework.cloud.config : warn
