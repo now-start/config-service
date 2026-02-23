@@ -30,4 +30,3 @@ evergreen:
     vol-regime-threshold: 0.6
     regime-band: 0.01
     signal-order-notional: 100000
-    min-position-qty: 0.00000001
