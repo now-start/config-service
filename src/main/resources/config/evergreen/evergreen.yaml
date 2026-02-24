@@ -22,11 +22,13 @@ evergreen:
     markets: KRW-BTC
     candle-count: 400
     closed-candle-only: true
-    regime-ema-len: 120
-    atr-period: 18
-    atr-mult-low-vol: 2.0
-    atr-mult-high-vol: 3.0
-    vol-regime-lookback: 40
-    vol-regime-threshold: 0.6
-    regime-band: 0.01
     signal-order-notional: 100000
+    active-strategy-version: v5
+    v5:
+      regime-ema-len: 120
+      atr-period: 18
+      atr-mult-low-vol: 2.0
+      atr-mult-high-vol: 3.0
+      vol-regime-lookback: 40
+      vol-regime-threshold: 0.6
+      regime-band: 0.01
