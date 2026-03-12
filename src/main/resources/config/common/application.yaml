@@ -54,6 +54,11 @@ management:
     process:
       enabled: true
 
+otel:
+  exporter:
+    otlp:
+      endpoint: '{cipher}b539c9ab7dd24fbbecfd2c1e0b7744bc8ca9d198dd9a8ed74353376e1e7eb73c'
+
 logging:
   charset:
     file: UTF-8
