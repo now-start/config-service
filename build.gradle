@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'org.nowstart'
-version = '2.1.3'
+version = '2.1.4'
 
 springBoot {
     buildInfo()
@@ -35,6 +35,7 @@ ext {
 }
 
 dependencies {
+    implementation 'io.opentelemetry.instrumentation:opentelemetry-spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.cloud:spring-cloud-config-server'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
