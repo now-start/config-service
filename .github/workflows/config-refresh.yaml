@@ -14,11 +14,19 @@ jobs:
 
     steps:
       - name: Trigger Bus Refresh
+        env:
+          CONFIG_SERVER_URL: ${{ secrets.CONFIG_SERVER_URL || 'http://localhost:8888' }}
+          CONFIG_SERVER_USERNAME: ${{ secrets.CONFIG_SERVER_USERNAME }}
+          CONFIG_SERVER_PASSWORD: ${{ secrets.CONFIG_SERVER_PASSWORD }}
         run: |
-          CONFIG_SERVER_URL="${{ secrets.CONFIG_SERVER_URL || 'http://localhost:8888' }}"
+          if [ -z "$CONFIG_SERVER_USERNAME" ] || [ -z "$CONFIG_SERVER_PASSWORD" ]; then
+            echo "Missing CONFIG_SERVER_USERNAME or CONFIG_SERVER_PASSWORD secret"
+            exit 1
+          fi
 
           STATUS=$(curl -o /dev/null -s -w "%{http_code}" \
             -X POST "$CONFIG_SERVER_URL/actuator/busrefresh" \
+            --user "$CONFIG_SERVER_USERNAME:$CONFIG_SERVER_PASSWORD" \
             --connect-timeout 5 \
             --max-time 15)
 
