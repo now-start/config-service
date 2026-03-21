@@ -45,6 +45,4 @@ security:
     - "/*/v3/api-docs"
     - "/admin/v3/api-docs/swagger-config"
   publicPaths:
-    - "/*/actuator/**"                    # 엑추에이터
-    - "/actuator/**"                      # 엑추에이터
     - "/nyang-nyang-bot/**"               # 자체 인증
